@@ -3,7 +3,7 @@ package me.melontini.booster.config;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 
-@Config(name = "linkart")
+@Config(name = "minecart-booster")
 public class MinecartBoosterConfig implements ConfigData{
     double minecartSpeed = 0.4;
     double furnaceMinecartSpeed = 0.4;
