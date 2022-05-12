@@ -9,8 +9,6 @@ public class MinecartBooster implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		System.out.println("Minecarts are now faster!");
-	}
-	public void onInit() {
-        AutoConfig.register(MinecartBoosterConfig.class, Toml4jConfigSerializer::new);
+		AutoConfig.register(MinecartBoosterConfig.class, Toml4jConfigSerializer::new);
 	}
 }
