@@ -14,11 +14,10 @@ import net.minecraft.world.World;
 
 @Mixin(AbstractMinecartEntity.class)
 public abstract class AbstractMinecartEntityMixin extends Entity{
-    private static MinecartBoosterConfig config = AutoConfig.getConfigHolder(MinecartBoosterConfig.class).getConfig();
+    private static final MinecartBoosterConfig config = AutoConfig.getConfigHolder(MinecartBoosterConfig.class).getConfig();
 
     protected AbstractMinecartEntityMixin(EntityType<?> entityType, World world) {
         super(entityType, world);
-        //TODO Auto-generated constructor stub
     }
     @Inject(at = @At("RETURN"), method = "getMaxOffRailSpeed()D", cancellable = true)
     public void getMaxOffRailSpeed(CallbackInfoReturnable<Double> cir) {

@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Minecart Booster",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Make your minecarts faster!",
   "authors": [
     "melontini"
   ],
@@ -31,6 +31,6 @@
     "minecraft": "1.16.x"
   },
   "suggests": {
-    "another-mod": "*"
+    "linkart": "*"
   }
 }
