@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "minecartbooster",
+  "version": "${version}",
+
+  "name": "Minecart Booster",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "melontini"
+  ],
+  "contact": {
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.melontini.booster.MinecartBooster"
+    ]
+  },
+  "mixins": [
+    "booster.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

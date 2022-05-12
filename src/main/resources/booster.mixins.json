@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.melontini.booster.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AbstractMinecartEntityMixin",
+    "FurnaceMinecartMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
