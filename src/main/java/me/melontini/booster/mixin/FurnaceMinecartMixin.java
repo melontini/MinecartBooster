@@ -21,7 +21,7 @@ public abstract class FurnaceMinecartMixin extends AbstractMinecartEntity{
     }
     @Inject(at = @At("RETURN"), method = "getMaxOffRailSpeed()D", cancellable = true)
     public void getMaxOffRailSpeed(CallbackInfoReturnable<Double> cir) {
-        cir.setReturnValue(config.furnaceMinecartSpeed());
+        cir.setReturnValue(config.getFurnaceMinecartSpeed());
     }
     
 }
